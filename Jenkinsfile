@@ -5,9 +5,4 @@ pipeline {
             image 'maven'
         }
     }
-  
-
-    
-    
-    
 }
