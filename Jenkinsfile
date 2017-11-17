@@ -7,7 +7,7 @@ pipeline {
     }
 
   environment{
-    ....
+    
   }
   
     stages {
