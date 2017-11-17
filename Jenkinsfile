@@ -5,16 +5,12 @@ pipeline {
             image 'maven'
         }
     }
-
-  environment{
-    
-  }
   
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn clean build'
+                sh 'mvn package'
             }
         }
         stage('Test') {
