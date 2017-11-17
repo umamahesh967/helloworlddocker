@@ -1,8 +1,8 @@
 pipeline {
 
-    agent {
-        docker {
-            image 'maven'
+    stages{
+        stage('build'){
+        sh 'mvn package'
         }
     }
 }
