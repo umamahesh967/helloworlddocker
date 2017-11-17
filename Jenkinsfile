@@ -9,20 +9,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Building...1'
                 sh 'mvn package'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                sh 'mvn test'
             }
         }
     }
     
-    post{
-      sh 'docker build -t test .'
-      sh 'docker run test '
-    }
+    
 }
