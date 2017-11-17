@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...1'
-                sh 'mvn package'
+                sh 'mvn test'
             }
         }
     }
